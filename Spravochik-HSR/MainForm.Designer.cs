@@ -161,6 +161,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Жуань Мень\r\n";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox4
             // 
@@ -182,6 +183,7 @@
             this.button4.TabIndex = 11;
             this.button4.Text = "ХоХо";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button1_Click);
             // 
             // MainForm
             // 
@@ -206,6 +208,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Click += new System.EventHandler(this.button1_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

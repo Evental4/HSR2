@@ -22,6 +22,9 @@ namespace Spravochik_HSR
             pictureBox1.Load("../../Pictures/" + name + ".png");
         }
 
-        
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
