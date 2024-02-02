@@ -22,3 +22,4 @@ D:\хижов максим\Справочник\Spravoshnic_HSR-main\Spravochik-
 D:\хижов максим\Справочник\Spravoshnic_HSR-main\Spravochik-HSR\Spravochik-HSR\bin\Debug\Spravochik-HSR.pdb
 D:\хижов максим\Справочник\Spravoshnic_HSR-main\Spravochik-HSR\Spravochik-HSR\obj\Debug\Spravochik_HSR.MainForm.resources
 D:\хижов максим\Справочник\Spravoshnic_HSR-main\Spravochik-HSR\Spravochik-HSR\obj\Debug\Spravochik_HSR.InfoForm.resources
+D:\хижов максим\Справочник\Spravoshnic_HSR-main\Spravochik-HSR\Spravochik-HSR\obj\Debug\Spravochik_HSR.AuthForm.resources
