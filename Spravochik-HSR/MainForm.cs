@@ -138,7 +138,13 @@ namespace Spravochik_HSR
 
 
         }
-       
+
+        private void RegButton_Click(object sender, EventArgs e)
+        {
+            RegForm reg = new RegForm();
+            reg.ShowDialog();
+        }
+
         
     }
  

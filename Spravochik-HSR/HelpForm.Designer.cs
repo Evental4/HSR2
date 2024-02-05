@@ -36,6 +36,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.LightGreen;
             this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.ForeColor = System.Drawing.Color.Navy;
             this.textBox1.Location = new System.Drawing.Point(1, 1);
             this.textBox1.Multiline = true;
@@ -43,8 +44,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(533, 690);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Справочник по \"Honkai Star Reil\"\r\n\r\nВ ней можно ужнать базывые или \r\nболее продви" +
-    "нутые знания об игре\r\n";
+            this.textBox1.Text = "Справочник по \"Honkai Star Reil\"\r\n\r\nВ ней можно ужнать базывые знания об игре\r\n";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // HelpForm
