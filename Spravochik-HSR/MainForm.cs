@@ -45,7 +45,7 @@ namespace Spravochik_HSR
 
     public partial class MainForm : Form
     {
-            Pers[] Pers_list = new Pers[6];
+            Pers[] Pers_list = new Pers[7];
         public MainForm()
         {
             InitializeComponent();
@@ -56,9 +56,10 @@ namespace Spravochik_HSR
             Pers_list[3] = new Pers("ХоХо","Hiler","Hp 1434","Def 600","Atc 420","Spid 102");
             Pers_list[4] = new Pers("Броня", "Sap","Hp 1200","Def 450","Atc 520","Spid 100");
             Pers_list[5] = new Pers("Доктор Рацио", "DD", "Hp 1200", "Def 450", "Atc 620", "Spid 100");
+            Pers_list[6] = new Pers("Дань хен", "DD", "Hp 1150", "Def 450", "Atc 540", "Spid 100");
 
             Text = "Справочник по HSR";
-
+            Hellolabel.Visible = false;
           
         }
 
@@ -78,20 +79,10 @@ namespace Spravochik_HSR
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            if(AuthForm.Login =="")
-            {
-                Auth_button.Text = "Войти";
-                Hellolabel.Visible = false;
-            }
-            if (AuthForm.Login != "")
-            {
-                Auth_button.Text = "Выйти";
-                Hellolabel.Visible = true;
-            }
-
-                int x = 10;
-            int y = 150;
-            for (int i = 0; i < 6; i++)
+            
+            int x = 10;
+            int y = 90;
+            for (int i = 0; i < 7; i++)
             {
                 Pers_list[i].btn.Location = new Point(x, y + 190);
                 Pers_list[i].btn.Size = new Size(150, 40);
@@ -123,10 +114,32 @@ namespace Spravochik_HSR
 
         private void Auth_button_Click(object sender, EventArgs e)
         {
-            AuthForm  authForm = new AuthForm();
-            authForm.ShowDialog();
+            if (AuthForm.Login == "")
+            {
+                AuthForm authForm = new AuthForm();
+                authForm.ShowDialog();
+            }
+            else
+            {
+                AuthForm.Login = "";
+            }
+
+            if (AuthForm.Login == "")
+            {
+                Auth_button.Text = "Войти";
+                Hellolabel.Visible = false;
+            }
+            else 
+            {
+                Auth_button.Text = "Выйти";
+                Hellolabel.Visible = true;
+                Hellolabel.Text = "Вы аторизовались как" +  AuthForm.Login;
+            }
+
 
         }
+       
+        
     }
  
 }

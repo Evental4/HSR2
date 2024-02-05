@@ -31,10 +31,10 @@
             this.HelpButton = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.UzerPanel = new System.Windows.Forms.Panel();
+            this.Hellolabel = new System.Windows.Forms.Label();
+            this.Auth_button = new System.Windows.Forms.Button();
             this.FiltPanel = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.Auth_button = new System.Windows.Forms.Button();
-            this.Hellolabel = new System.Windows.Forms.Label();
             this.UzerPanel.SuspendLayout();
             this.FiltPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -75,6 +75,27 @@
             this.UzerPanel.Size = new System.Drawing.Size(885, 53);
             this.UzerPanel.TabIndex = 14;
             // 
+            // Hellolabel
+            // 
+            this.Hellolabel.AutoSize = true;
+            this.Hellolabel.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.Hellolabel.Location = new System.Drawing.Point(148, 4);
+            this.Hellolabel.Name = "Hellolabel";
+            this.Hellolabel.Size = new System.Drawing.Size(51, 19);
+            this.Hellolabel.TabIndex = 1;
+            this.Hellolabel.Text = "label1";
+            // 
+            // Auth_button
+            // 
+            this.Auth_button.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Auth_button.Location = new System.Drawing.Point(3, 3);
+            this.Auth_button.Name = "Auth_button";
+            this.Auth_button.Size = new System.Drawing.Size(139, 47);
+            this.Auth_button.TabIndex = 0;
+            this.Auth_button.Text = "Войти\r\n";
+            this.Auth_button.UseVisualStyleBackColor = false;
+            this.Auth_button.Click += new System.EventHandler(this.Auth_button_Click);
+            // 
             // FiltPanel
             // 
             this.FiltPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -99,27 +120,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 59);
             this.tableLayoutPanel1.TabIndex = 16;
-            // 
-            // Auth_button
-            // 
-            this.Auth_button.BackColor = System.Drawing.SystemColors.Desktop;
-            this.Auth_button.Location = new System.Drawing.Point(3, 3);
-            this.Auth_button.Name = "Auth_button";
-            this.Auth_button.Size = new System.Drawing.Size(139, 47);
-            this.Auth_button.TabIndex = 0;
-            this.Auth_button.Text = "Войти\r\n";
-            this.Auth_button.UseVisualStyleBackColor = false;
-            this.Auth_button.Click += new System.EventHandler(this.Auth_button_Click);
-            // 
-            // Hellolabel
-            // 
-            this.Hellolabel.AutoSize = true;
-            this.Hellolabel.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.Hellolabel.Location = new System.Drawing.Point(148, 4);
-            this.Hellolabel.Name = "Hellolabel";
-            this.Hellolabel.Size = new System.Drawing.Size(51, 19);
-            this.Hellolabel.TabIndex = 1;
-            this.Hellolabel.Text = "label1";
             // 
             // MainForm
             // 
