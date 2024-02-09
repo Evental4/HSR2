@@ -31,18 +31,19 @@
             this.HelpButton = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.UzerPanel = new System.Windows.Forms.Panel();
+            this.roleCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.RegButton = new System.Windows.Forms.Button();
             this.Hellolabel = new System.Windows.Forms.Label();
             this.Auth_button = new System.Windows.Forms.Button();
             this.FiltPanel = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.FindButton = new System.Windows.Forms.Button();
+            this.tipTextBox = new System.Windows.Forms.TextBox();
+            this.pyteTextBox = new System.Windows.Forms.TextBox();
+            this.roleTextBox = new System.Windows.Forms.TextBox();
+            this.tipcomboBox = new System.Windows.Forms.ComboBox();
+            this.pytecomboBox = new System.Windows.Forms.ComboBox();
+            this.rolecomboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.UzerPanel.SuspendLayout();
             this.FiltPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             this.HelpButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.HelpButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.HelpButton.Location = new System.Drawing.Point(727, 1);
+            this.HelpButton.Location = new System.Drawing.Point(619, 2);
             this.HelpButton.Margin = new System.Windows.Forms.Padding(4);
             this.HelpButton.Name = "HelpButton";
             this.HelpButton.Size = new System.Drawing.Size(88, 31);
@@ -81,8 +82,19 @@
             this.UzerPanel.Controls.Add(this.Auth_button);
             this.UzerPanel.Location = new System.Drawing.Point(3, 3);
             this.UzerPanel.Name = "UzerPanel";
-            this.UzerPanel.Size = new System.Drawing.Size(818, 53);
+            this.UzerPanel.Size = new System.Drawing.Size(712, 53);
             this.UzerPanel.TabIndex = 14;
+            // 
+            // roleCheckedListBox
+            // 
+            this.roleCheckedListBox.FormattingEnabled = true;
+            this.roleCheckedListBox.Items.AddRange(new object[] {
+            "DD",
+            "SapDD"});
+            this.roleCheckedListBox.Location = new System.Drawing.Point(285, 2);
+            this.roleCheckedListBox.Name = "roleCheckedListBox";
+            this.roleCheckedListBox.Size = new System.Drawing.Size(86, 48);
+            this.roleCheckedListBox.TabIndex = 4;
             // 
             // RegButton
             // 
@@ -119,69 +131,104 @@
             // FiltPanel
             // 
             this.FiltPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FiltPanel.Controls.Add(this.textBox4);
-            this.FiltPanel.Controls.Add(this.textBox3);
-            this.FiltPanel.Controls.Add(this.textBox2);
-            this.FiltPanel.Controls.Add(this.textBox1);
-            this.FiltPanel.Controls.Add(this.comboBox3);
-            this.FiltPanel.Controls.Add(this.comboBox2);
-            this.FiltPanel.Controls.Add(this.comboBox1);
+            this.FiltPanel.Controls.Add(this.roleCheckedListBox);
+            this.FiltPanel.Controls.Add(this.FindButton);
+            this.FiltPanel.Controls.Add(this.tipTextBox);
+            this.FiltPanel.Controls.Add(this.pyteTextBox);
+            this.FiltPanel.Controls.Add(this.roleTextBox);
+            this.FiltPanel.Controls.Add(this.tipcomboBox);
+            this.FiltPanel.Controls.Add(this.pytecomboBox);
+            this.FiltPanel.Controls.Add(this.rolecomboBox);
             this.FiltPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FiltPanel.Location = new System.Drawing.Point(827, 3);
+            this.FiltPanel.Location = new System.Drawing.Point(721, 3);
             this.FiltPanel.Name = "FiltPanel";
-            this.FiltPanel.Size = new System.Drawing.Size(354, 53);
+            this.FiltPanel.Size = new System.Drawing.Size(460, 55);
             this.FiltPanel.TabIndex = 15;
             // 
-            // textBox2
+            // FindButton
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 0);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(87, 22);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "Путь";
+            this.FindButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.FindButton.Font = new System.Drawing.Font("Leelawadee", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FindButton.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.FindButton.Location = new System.Drawing.Point(389, 9);
+            this.FindButton.Name = "FindButton";
+            this.FindButton.Size = new System.Drawing.Size(62, 34);
+            this.FindButton.TabIndex = 6;
+            this.FindButton.Text = "Найти";
+            this.FindButton.UseVisualStyleBackColor = false;
+            this.FindButton.Click += new System.EventHandler(this.FindButton_Click);
             // 
-            // textBox1
+            // tipTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(89, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Роль";
+            this.tipTextBox.Location = new System.Drawing.Point(192, 0);
+            this.tipTextBox.Multiline = true;
+            this.tipTextBox.Name = "tipTextBox";
+            this.tipTextBox.Size = new System.Drawing.Size(87, 22);
+            this.tipTextBox.TabIndex = 5;
+            this.tipTextBox.Text = "Тип_урона";
             // 
-            // comboBox3
+            // pyteTextBox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(192, 23);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(87, 27);
-            this.comboBox3.TabIndex = 2;
+            this.pyteTextBox.Location = new System.Drawing.Point(99, 0);
+            this.pyteTextBox.Multiline = true;
+            this.pyteTextBox.Name = "pyteTextBox";
+            this.pyteTextBox.Size = new System.Drawing.Size(87, 22);
+            this.pyteTextBox.TabIndex = 4;
+            this.pyteTextBox.Text = "Путь";
             // 
-            // comboBox2
+            // roleTextBox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(99, 22);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(87, 27);
-            this.comboBox2.TabIndex = 1;
+            this.roleTextBox.Location = new System.Drawing.Point(4, 2);
+            this.roleTextBox.Multiline = true;
+            this.roleTextBox.Name = "roleTextBox";
+            this.roleTextBox.Size = new System.Drawing.Size(89, 20);
+            this.roleTextBox.TabIndex = 3;
+            this.roleTextBox.Text = "Роль";
             // 
-            // comboBox1
+            // tipcomboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tipcomboBox.FormattingEnabled = true;
+            this.tipcomboBox.Items.AddRange(new object[] {
+            "",
+            "Физический",
+            "Ветреной"});
+            this.tipcomboBox.Location = new System.Drawing.Point(192, 25);
+            this.tipcomboBox.Name = "tipcomboBox";
+            this.tipcomboBox.Size = new System.Drawing.Size(87, 27);
+            this.tipcomboBox.TabIndex = 2;
+            // 
+            // pytecomboBox
+            // 
+            this.pytecomboBox.FormattingEnabled = true;
+            this.pytecomboBox.Items.AddRange(new object[] {
+            "",
+            "Разрушение"});
+            this.pytecomboBox.Location = new System.Drawing.Point(99, 26);
+            this.pytecomboBox.Name = "pytecomboBox";
+            this.pytecomboBox.Size = new System.Drawing.Size(87, 27);
+            this.pytecomboBox.TabIndex = 1;
+            // 
+            // rolecomboBox
+            // 
+            this.rolecomboBox.FormattingEnabled = true;
+            this.rolecomboBox.Items.AddRange(new object[] {
+            "",
             "DD",
-            "SapDD"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(90, 27);
-            this.comboBox1.TabIndex = 0;
+            "SapDD",
+            "Sap",
+            "Hiler",
+            "Debaffer",
+            "Defens"});
+            this.rolecomboBox.Location = new System.Drawing.Point(4, 25);
+            this.rolecomboBox.Name = "rolecomboBox";
+            this.rolecomboBox.Size = new System.Drawing.Size(90, 27);
+            this.rolecomboBox.TabIndex = 0;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.67905F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.32095F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.64189F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 39.35811F));
             this.tableLayoutPanel1.Controls.Add(this.UzerPanel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.FiltPanel, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -189,26 +236,8 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 59);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 61);
             this.tableLayoutPanel1.TabIndex = 16;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(192, 1);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(87, 20);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "Тип_урона";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(285, 9);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(65, 29);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "Найти\r\n";
             // 
             // MainForm
             // 
@@ -243,13 +272,14 @@
         private System.Windows.Forms.Button Auth_button;
         private System.Windows.Forms.Label Hellolabel;
         private System.Windows.Forms.Button RegButton;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox rolecomboBox;
+        private System.Windows.Forms.TextBox pyteTextBox;
+        private System.Windows.Forms.TextBox roleTextBox;
+        private System.Windows.Forms.ComboBox tipcomboBox;
+        private System.Windows.Forms.ComboBox pytecomboBox;
+        private System.Windows.Forms.TextBox tipTextBox;
+        private System.Windows.Forms.Button FindButton;
+        private System.Windows.Forms.CheckedListBox roleCheckedListBox;
     }
 }
 
