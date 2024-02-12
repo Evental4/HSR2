@@ -54,7 +54,7 @@ namespace Spravochik_HSR
         {
             InitializeComponent();
 
-            Pers_list[0] = new Pers("Келус", "DD or SapDD","Физический" ,"Разрушение", "Hp 1203","Def 460","Atc 620","Spid 100");
+            Pers_list[0] = new Pers("Келус", "SapDD","Физический" ,"Разрушение", "Hp 1203","Def 460","Atc 620","Spid 100");
             Pers_list[1] = new Pers("Блейд", "DD or SapDD", "Ветреной", "Разрушение","Hp 1400","Def 800","Atc 420","Spid 97");
             Pers_list[2] = new Pers("Жуань Мэй","Sap","Леденой", "Гармония", "Hp 1100","Def 400","Atc 520","Spid 100");
             Pers_list[3] = new Pers("ХоХо","Hiler", "Ветреной", "Изобилие","Hp 1434","Def 600","Atc 420","Spid 102");
@@ -79,9 +79,19 @@ namespace Spravochik_HSR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button btn = (Button)sender;
-            InfoForm info = new InfoForm(btn.Text);
-            info.ShowDialog(); 
+            for (int i = 0; i < 9; ++i)
+            { 
+                if(((Button)sender).Text == Pers_list[i].btn.Text)
+                {
+                    InfoForm info = new InfoForm(Pers_list[i]);
+                    info.ShowDialog();
+
+                }
+            
+            
+            }
+                
+            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -103,7 +113,7 @@ namespace Spravochik_HSR
                 ViewPanel.Controls.Add(Pers_list[i].pic);
 
                 x += 205;
-                if (x > this.Size.Width - 150)
+                if (x > this.Size.Width - 185)
                 {
                     y += 250;
                     x = 10;
@@ -116,7 +126,7 @@ namespace Spravochik_HSR
 
         private void ViewPanel_Resize(object sender, EventArgs e)
         {
-            MainForm_Load(null, null);
+            FindButton_Click(null, null);
         }
 
         private void Auth_button_Click(object sender, EventArgs e)
@@ -161,12 +171,6 @@ namespace Spravochik_HSR
             {
                 Pers_list[i].btn.Visible = true;
                 Pers_list[i].pic.Visible = true;
-                if (roleCheckedListBox.CheckedItems.Count>0 &&
-                    roleCheckedListBox.CheckedItems.Contains(Pers_list[i].role))
-                {
-                    Pers_list[i].btn.Visible = false;
-                    Pers_list[i].pic.Visible = false;
-                }
 
 
                 if (rolecomboBox.Text != "" && rolecomboBox.Text != Pers_list[i].role)
@@ -191,7 +195,7 @@ namespace Spravochik_HSR
                     Pers_list[i].pic.Location = new Point(x, y);
 
                     x += 205;
-                    if (x > this.Size.Width - 150)
+                    if (x > this.Size.Width - 185)
                     {
                         y += 250;
                         x = 10;
@@ -199,9 +203,11 @@ namespace Spravochik_HSR
                 }
             }
 
+           
 
 
-        }
+
+    }
 
         
     }

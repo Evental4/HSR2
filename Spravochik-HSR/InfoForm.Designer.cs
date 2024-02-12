@@ -32,11 +32,17 @@
             this.label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.PytepictureBox = new System.Windows.Forms.PictureBox();
+            this.TippictureBox = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rolelabel = new System.Windows.Forms.Label();
+            this.pytelabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tiplabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PytepictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TippictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -44,6 +50,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(12, 55);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(482, 439);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -59,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(500, 135);
+            this.label1.Location = new System.Drawing.Point(500, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 2;
@@ -73,31 +80,95 @@
             this.textBox1.Size = new System.Drawing.Size(440, 336);
             this.textBox1.TabIndex = 3;
             // 
-            // pictureBox2
+            // PytepictureBox
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(500, 36);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(101, 96);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.PytepictureBox.Location = new System.Drawing.Point(816, 106);
+            this.PytepictureBox.Name = "PytepictureBox";
+            this.PytepictureBox.Size = new System.Drawing.Size(45, 45);
+            this.PytepictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PytepictureBox.TabIndex = 4;
+            this.PytepictureBox.TabStop = false;
             // 
-            // pictureBox3
+            // TippictureBox
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(635, 36);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 96);
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.TippictureBox.Location = new System.Drawing.Point(816, 55);
+            this.TippictureBox.Name = "TippictureBox";
+            this.TippictureBox.Size = new System.Drawing.Size(45, 45);
+            this.TippictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.TippictureBox.TabIndex = 5;
+            this.TippictureBox.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(607, 29);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Роль в отряде -";
+            // 
+            // rolelabel
+            // 
+            this.rolelabel.AutoSize = true;
+            this.rolelabel.Location = new System.Drawing.Point(764, 33);
+            this.rolelabel.Name = "rolelabel";
+            this.rolelabel.Size = new System.Drawing.Size(51, 20);
+            this.rolelabel.TabIndex = 7;
+            this.rolelabel.Text = "label3";
+            // 
+            // pytelabel
+            // 
+            this.pytelabel.AutoSize = true;
+            this.pytelabel.Location = new System.Drawing.Point(677, 108);
+            this.pytelabel.Name = "pytelabel";
+            this.pytelabel.Size = new System.Drawing.Size(51, 20);
+            this.pytelabel.TabIndex = 9;
+            this.pytelabel.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(607, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 24);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Путь -";
+            // 
+            // tiplabel
+            // 
+            this.tiplabel.AutoSize = true;
+            this.tiplabel.Location = new System.Drawing.Point(725, 69);
+            this.tiplabel.Name = "tiplabel";
+            this.tiplabel.Size = new System.Drawing.Size(51, 20);
+            this.tiplabel.TabIndex = 11;
+            this.tiplabel.Text = "label3";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(607, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 24);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Тип урона -";
             // 
             // InfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(960, 692);
+            this.Controls.Add(this.tiplabel);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pytelabel);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.rolelabel);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.TippictureBox);
+            this.Controls.Add(this.PytepictureBox);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label);
@@ -107,8 +178,8 @@
             this.Name = "InfoForm";
             this.Text = "InfoForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PytepictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TippictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -120,7 +191,13 @@
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox PytepictureBox;
+        private System.Windows.Forms.PictureBox TippictureBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label rolelabel;
+        private System.Windows.Forms.Label pytelabel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label tiplabel;
+        private System.Windows.Forms.Label label5;
     }
 }

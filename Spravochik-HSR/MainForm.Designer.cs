@@ -31,7 +31,6 @@
             this.HelpButton = new System.Windows.Forms.Button();
             this.ViewPanel = new System.Windows.Forms.Panel();
             this.UzerPanel = new System.Windows.Forms.Panel();
-            this.roleCheckedListBox = new System.Windows.Forms.CheckedListBox();
             this.RegButton = new System.Windows.Forms.Button();
             this.Hellolabel = new System.Windows.Forms.Label();
             this.Auth_button = new System.Windows.Forms.Button();
@@ -85,17 +84,6 @@
             this.UzerPanel.Size = new System.Drawing.Size(712, 53);
             this.UzerPanel.TabIndex = 14;
             // 
-            // roleCheckedListBox
-            // 
-            this.roleCheckedListBox.FormattingEnabled = true;
-            this.roleCheckedListBox.Items.AddRange(new object[] {
-            "DD",
-            "SapDD"});
-            this.roleCheckedListBox.Location = new System.Drawing.Point(285, 2);
-            this.roleCheckedListBox.Name = "roleCheckedListBox";
-            this.roleCheckedListBox.Size = new System.Drawing.Size(86, 48);
-            this.roleCheckedListBox.TabIndex = 4;
-            // 
             // RegButton
             // 
             this.RegButton.BackColor = System.Drawing.SystemColors.Desktop;
@@ -131,7 +119,6 @@
             // FiltPanel
             // 
             this.FiltPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.FiltPanel.Controls.Add(this.roleCheckedListBox);
             this.FiltPanel.Controls.Add(this.FindButton);
             this.FiltPanel.Controls.Add(this.tipTextBox);
             this.FiltPanel.Controls.Add(this.pyteTextBox);
@@ -163,7 +150,7 @@
             this.tipTextBox.Location = new System.Drawing.Point(192, 0);
             this.tipTextBox.Multiline = true;
             this.tipTextBox.Name = "tipTextBox";
-            this.tipTextBox.Size = new System.Drawing.Size(87, 22);
+            this.tipTextBox.Size = new System.Drawing.Size(82, 22);
             this.tipTextBox.TabIndex = 5;
             this.tipTextBox.Text = "Тип_урона";
             // 
@@ -191,10 +178,15 @@
             this.tipcomboBox.Items.AddRange(new object[] {
             "",
             "Физический",
-            "Ветреной"});
+            "Ветреной",
+            "Леденой",
+            "Огненый",
+            "Электрический",
+            "Квантовый",
+            "Мнимый"});
             this.tipcomboBox.Location = new System.Drawing.Point(192, 25);
             this.tipcomboBox.Name = "tipcomboBox";
-            this.tipcomboBox.Size = new System.Drawing.Size(87, 27);
+            this.tipcomboBox.Size = new System.Drawing.Size(82, 27);
             this.tipcomboBox.TabIndex = 2;
             // 
             // pytecomboBox
@@ -202,7 +194,13 @@
             this.pytecomboBox.FormattingEnabled = true;
             this.pytecomboBox.Items.AddRange(new object[] {
             "",
-            "Разрушение"});
+            "Разрушение",
+            "Охота",
+            "Изобилие",
+            "Эрудикция",
+            "Небытие",
+            "Сохранение",
+            "Гармония"});
             this.pytecomboBox.Location = new System.Drawing.Point(99, 26);
             this.pytecomboBox.Name = "pytecomboBox";
             this.pytecomboBox.Size = new System.Drawing.Size(87, 27);
@@ -218,7 +216,8 @@
             "Sap",
             "Hiler",
             "Debaffer",
-            "Defens"});
+            "Defens",
+            "DD or SapDD"});
             this.rolecomboBox.Location = new System.Drawing.Point(4, 25);
             this.rolecomboBox.Name = "rolecomboBox";
             this.rolecomboBox.Size = new System.Drawing.Size(90, 27);
@@ -279,7 +278,6 @@
         private System.Windows.Forms.ComboBox pytecomboBox;
         private System.Windows.Forms.TextBox tipTextBox;
         private System.Windows.Forms.Button FindButton;
-        private System.Windows.Forms.CheckedListBox roleCheckedListBox;
     }
 }
 
