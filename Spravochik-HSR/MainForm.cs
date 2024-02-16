@@ -49,20 +49,23 @@ namespace Spravochik_HSR
 
     public partial class MainForm : Form
     {
-            Pers[] Pers_list = new Pers[9];
+            //Pers[] Pers_list = new Pers[10];
+
+        List<Pers> Pers_list = new List<Pers>();
+
         public MainForm()
         {
             InitializeComponent();
 
-            Pers_list[0] = new Pers("Келус", "SapDD","Физический" ,"Разрушение", "Hp 1203","Def 460","Atc 620","Spid 100");
-            Pers_list[1] = new Pers("Блейд", "DD or SapDD", "Ветреной", "Разрушение","Hp 1400","Def 800","Atc 420","Spid 97");
-            Pers_list[2] = new Pers("Жуань Мэй","Sap","Леденой", "Гармония", "Hp 1100","Def 400","Atc 520","Spid 100");
-            Pers_list[3] = new Pers("ХоХо","Hiler", "Ветреной", "Изобилие","Hp 1434","Def 600","Atc 420","Spid 102");
-            Pers_list[4] = new Pers("Броня", "Sap", "Ветреной", "Гармония","Hp 1200","Def 450","Atc 520","Spid 100");
-            Pers_list[5] = new Pers("Доктор Рацио", "DD", "Мнимый", "Охота", "Hp 1200", "Def 450", "Atc 620", "Spid 100");
-            Pers_list[6] = new Pers("Дань хен", "DD", "Ветреной", "Охота","Hp 1150","Def 450", "Atc 540", "Spid 100");
-            Pers_list[7] = new Pers("Цзин Юань", "DD", "Электрический", "Эрудикция","Hp 1200", "Def 450", "Atc 720", "Spid 99");
-            Pers_list[8] = new Pers("Пела", "Debaffer", "Леденой","Небытие ", "Hp 1100", "Def 400", "Atc 450", "Spid 97");
+            string[] strs = System.IO.File.ReadAllLines("Pers.txt");
+
+            foreach (string str in strs)
+            {
+                string[] parts = str.Split(new string[] {", "},StringSplitOptions.None);
+                Pers_list.Add(new Pers(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6], parts[7]));
+            }
+
+            
 
 
             Text = "Справочник по HSR";
@@ -79,7 +82,7 @@ namespace Spravochik_HSR
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 9; ++i)
+            for (int i = 0; i < Pers_list.Count; ++i)
             { 
                 if(((Button)sender).Text == Pers_list[i].btn.Text)
                 {
@@ -87,11 +90,7 @@ namespace Spravochik_HSR
                     info.ShowDialog();
 
                 }
-            
-            
-            }
-                
-            
+            }   
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -99,7 +98,7 @@ namespace Spravochik_HSR
             
             int x = 10;
             int y = 90;
-            for (int i = 0; i < 9; i++)
+            for (int i = 0; i < Pers_list.Count; i++)
             {
                 Pers_list[i].btn.Location = new Point(x, y + 190);
                 Pers_list[i].btn.Size = new Size(150, 40);
@@ -167,7 +166,7 @@ namespace Spravochik_HSR
             int x = 10;
             int y = 90;
 
-            for (int i =0; i < 9; i++)
+            for (int i =0; i < Pers_list.Count; i++)
             {
                 Pers_list[i].btn.Visible = true;
                 Pers_list[i].pic.Visible = true;

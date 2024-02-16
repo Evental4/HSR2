@@ -66,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(500, 32);
+            this.label1.Location = new System.Drawing.Point(500, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 2;
@@ -82,7 +82,7 @@
             // 
             // PytepictureBox
             // 
-            this.PytepictureBox.Location = new System.Drawing.Point(816, 106);
+            this.PytepictureBox.Location = new System.Drawing.Point(837, 106);
             this.PytepictureBox.Name = "PytepictureBox";
             this.PytepictureBox.Size = new System.Drawing.Size(45, 45);
             this.PytepictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +91,7 @@
             // 
             // TippictureBox
             // 
-            this.TippictureBox.Location = new System.Drawing.Point(816, 55);
+            this.TippictureBox.Location = new System.Drawing.Point(837, 55);
             this.TippictureBox.Name = "TippictureBox";
             this.TippictureBox.Size = new System.Drawing.Size(45, 45);
             this.TippictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

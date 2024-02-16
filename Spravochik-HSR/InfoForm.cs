@@ -59,16 +59,34 @@ namespace Spravochik_HSR
             {
                 PytepictureBox.Load("../../Pictures/Путь_Разрушение.png");
             }
-
-
-
+            if (pers.pyte == "Небытие")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Небытие.png");
+            }
+            if (pers.pyte == "Гармония")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Гармония.png");
+            }
+            if (pers.pyte == "Сахранение")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Сохранение.png");
+            }
+            if (pers.pyte == "Охота")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Охота.png");
+            }
+            if (pers.pyte == "Эрудикция")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Эрудикция.png");
+            }
+            if (pers.pyte == "Изобилие")
+            {
+                PytepictureBox.Load("../../Pictures/Путь_Изобилие.png");
+            }
 
 
         }
 
-
-
-
-        
+       
     }
 }
