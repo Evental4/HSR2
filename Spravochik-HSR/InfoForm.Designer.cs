@@ -111,7 +111,7 @@
             // rolelabel
             // 
             this.rolelabel.AutoSize = true;
-            this.rolelabel.Location = new System.Drawing.Point(764, 33);
+            this.rolelabel.Location = new System.Drawing.Point(755, 33);
             this.rolelabel.Name = "rolelabel";
             this.rolelabel.Size = new System.Drawing.Size(51, 20);
             this.rolelabel.TabIndex = 7;
@@ -120,7 +120,7 @@
             // pytelabel
             // 
             this.pytelabel.AutoSize = true;
-            this.pytelabel.Location = new System.Drawing.Point(677, 108);
+            this.pytelabel.Location = new System.Drawing.Point(668, 108);
             this.pytelabel.Name = "pytelabel";
             this.pytelabel.Size = new System.Drawing.Size(51, 20);
             this.pytelabel.TabIndex = 9;
@@ -139,7 +139,7 @@
             // tiplabel
             // 
             this.tiplabel.AutoSize = true;
-            this.tiplabel.Location = new System.Drawing.Point(725, 69);
+            this.tiplabel.Location = new System.Drawing.Point(716, 69);
             this.tiplabel.Name = "tiplabel";
             this.tiplabel.Size = new System.Drawing.Size(51, 20);
             this.tiplabel.TabIndex = 11;

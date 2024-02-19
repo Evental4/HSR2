@@ -49,7 +49,7 @@ namespace Spravochik_HSR
 
     public partial class MainForm : Form
     {
-            //Pers[] Pers_list = new Pers[10];
+        public static string Login = "";
 
         List<Pers> Pers_list = new List<Pers>();
 
@@ -130,26 +130,27 @@ namespace Spravochik_HSR
 
         private void Auth_button_Click(object sender, EventArgs e)
         {
-            if (AuthForm.Login == "")
+            if (Login == "")
             {
                 AuthForm authForm = new AuthForm();
                 authForm.ShowDialog();
             }
             else
             {
-                AuthForm.Login = "";
+                Login = "";
             }
 
-            if (AuthForm.Login == "")
+            if (Login == "")
             {
                 Auth_button.Text = "Войти";
                 Hellolabel.Visible = false;
+                RegButton.Visible = true;
             }
             else 
             {
                 Auth_button.Text = "Выйти";
                 Hellolabel.Visible = true;
-                Hellolabel.Text = "Вы аторизовались как" +  AuthForm.Login;
+                Hellolabel.Text = "Вы аторизовались как" + MainForm.Login;
             }
 
 

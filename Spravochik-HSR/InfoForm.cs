@@ -67,7 +67,7 @@ namespace Spravochik_HSR
             {
                 PytepictureBox.Load("../../Pictures/Путь_Гармония.png");
             }
-            if (pers.pyte == "Сахранение")
+            if (pers.pyte == "Сохранение")
             {
                 PytepictureBox.Load("../../Pictures/Путь_Сохранение.png");
             }
@@ -87,6 +87,6 @@ namespace Spravochik_HSR
 
         }
 
-       
+        
     }
 }
