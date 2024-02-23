@@ -12,9 +12,12 @@ namespace Spravochik_HSR
 {
     public partial class InfoForm : Form
     {
-        public InfoForm(Pers pers)
+        Pers  pers;
+        public InfoForm(Pers _pers)
         {
             InitializeComponent();
+
+            pers = _pers;
 
             Text = pers.name;
             label.Text = pers.name;
@@ -25,8 +28,8 @@ namespace Spravochik_HSR
             rolelabel.Text = pers.role;
             tiplabel.Text = pers.tip;
             pytelabel.Text = pers.pyte;
-            //типы
-            if(pers.tip == "Физический")
+            #region tip
+            if (pers.tip == "Физический")
             {
                 TippictureBox.Load("../../Pictures/Тип_урона_Физический.png");
             }
@@ -54,7 +57,9 @@ namespace Spravochik_HSR
             {
                 TippictureBox.Load("../../Pictures/Тип_урона_Квантовый.png");
             }
-            //пути
+            #endregion
+
+            #region pyte
             if (pers.pyte == "Разрушение")
             {
                 PytepictureBox.Load("../../Pictures/Путь_Разрушение.png");
@@ -83,10 +88,13 @@ namespace Spravochik_HSR
             {
                 PytepictureBox.Load("../../Pictures/Путь_Изобилие.png");
             }
-
+            #endregion
 
         }
 
-        
+        private void Selbutton_Click(object sender, EventArgs e)
+        {
+            SelectForm.my_pers_list.Add(pers);
+        }
     }
 }

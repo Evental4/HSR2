@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace Spravochik_HSR
 {
+    #region Струкеура объукта
     public struct Pers
     {
         public string name;
@@ -46,6 +47,7 @@ namespace Spravochik_HSR
             pic.Load("../../Pictures/" + name + ".png");
         }
     }
+    #endregion
 
     public partial class MainForm : Form
     {
@@ -70,7 +72,7 @@ namespace Spravochik_HSR
 
             Text = "Справочник по HSR";
             Hellolabel.Visible = false;
-          
+            //Selectbutton.Visible = false;
         }
 
         private void HelpButton_Click(object sender, EventArgs e)
@@ -93,6 +95,7 @@ namespace Spravochik_HSR
             }   
         }
 
+        #region Отображенте объекта
         private void MainForm_Load(object sender, EventArgs e)
         {
             
@@ -122,12 +125,12 @@ namespace Spravochik_HSR
 
             }
         }
-
+#endregion
         private void ViewPanel_Resize(object sender, EventArgs e)
         {
             FindButton_Click(null, null);
         }
-
+        #region вход 
         private void Auth_button_Click(object sender, EventArgs e)
         {
             if (Login == "")
@@ -145,23 +148,26 @@ namespace Spravochik_HSR
                 Auth_button.Text = "Войти";
                 Hellolabel.Visible = false;
                 RegButton.Visible = true;
+                //Selectbutton.Visible = false;
             }
             else 
             {
                 Auth_button.Text = "Выйти";
                 Hellolabel.Visible = true;
+                RegButton.Visible = false;
+                //Selectbutton.Visible = true;
                 Hellolabel.Text = "Вы аторизовались как" + MainForm.Login;
             }
 
 
         }
-
+        #endregion
         private void RegButton_Click(object sender, EventArgs e)
         {
             RegForm reg = new RegForm();
             reg.ShowDialog();
         }
-
+        #region Фильтор
         private void FindButton_Click(object sender, EventArgs e)
         {
             int x = 10;
@@ -202,14 +208,23 @@ namespace Spravochik_HSR
                     }
                 }
             }
-
            
 
 
 
+
+        }
+        #endregion
+        private void Selectbutton_Click(object sender, EventArgs e)
+        {
+            SelectForm selectForm = new SelectForm();
+            selectForm.ShowDialog();
+
+        }
+       
+
+
+
     }
 
-        
-    }
- 
 }

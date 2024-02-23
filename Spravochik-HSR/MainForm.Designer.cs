@@ -43,6 +43,7 @@
             this.pytecomboBox = new System.Windows.Forms.ComboBox();
             this.rolecomboBox = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.Selectbutton = new System.Windows.Forms.Button();
             this.UzerPanel.SuspendLayout();
             this.FiltPanel.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -75,6 +76,7 @@
             // 
             this.UzerPanel.AutoScroll = true;
             this.UzerPanel.BackColor = System.Drawing.SystemColors.Highlight;
+            this.UzerPanel.Controls.Add(this.Selectbutton);
             this.UzerPanel.Controls.Add(this.HelpButton);
             this.UzerPanel.Controls.Add(this.RegButton);
             this.UzerPanel.Controls.Add(this.Hellolabel);
@@ -87,7 +89,7 @@
             // RegButton
             // 
             this.RegButton.BackColor = System.Drawing.SystemColors.Desktop;
-            this.RegButton.Location = new System.Drawing.Point(81, 3);
+            this.RegButton.Location = new System.Drawing.Point(81, 4);
             this.RegButton.Name = "RegButton";
             this.RegButton.Size = new System.Drawing.Size(96, 46);
             this.RegButton.TabIndex = 2;
@@ -238,6 +240,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 61);
             this.tableLayoutPanel1.TabIndex = 16;
             // 
+            // Selectbutton
+            // 
+            this.Selectbutton.BackColor = System.Drawing.SystemColors.Desktop;
+            this.Selectbutton.Location = new System.Drawing.Point(588, 2);
+            this.Selectbutton.Name = "Selectbutton";
+            this.Selectbutton.Size = new System.Drawing.Size(96, 46);
+            this.Selectbutton.TabIndex = 4;
+            this.Selectbutton.Text = "Избраное";
+            this.Selectbutton.UseVisualStyleBackColor = false;
+            this.Selectbutton.Click += new System.EventHandler(this.Selectbutton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -278,6 +291,7 @@
         private System.Windows.Forms.ComboBox pytecomboBox;
         private System.Windows.Forms.TextBox tipTextBox;
         private System.Windows.Forms.Button FindButton;
+        private System.Windows.Forms.Button Selectbutton;
     }
 }
 

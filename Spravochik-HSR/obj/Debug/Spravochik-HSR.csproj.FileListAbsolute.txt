@@ -83,3 +83,18 @@ D:\хижов максим\мама\Spravochik-HSR\obj\Debug\Spravochik-HSR.cspr
 D:\хижов максим\мама\Spravochik-HSR\obj\Debug\Spravochik-HSR.csproj.CoreCompileInputs.cache
 D:\хижов максим\мама\Spravochik-HSR\obj\Debug\Spravochik-HSR.exe
 D:\хижов максим\мама\Spravochik-HSR\obj\Debug\Spravochik-HSR.pdb
+D:\инженерка\мапа\Spravochik-HSR\bin\Debug\Spravochik-HSR.exe.config
+D:\инженерка\мапа\Spravochik-HSR\bin\Debug\Spravochik-HSR.exe
+D:\инженерка\мапа\Spravochik-HSR\bin\Debug\Spravochik-HSR.pdb
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik-HSR.csproj.AssemblyReference.cache
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.AuthForm.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.InfoForm.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.MainForm.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.HelpForm.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.Properties.Resources.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.RegForm.resources
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik-HSR.csproj.GenerateResource.cache
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik-HSR.csproj.CoreCompileInputs.cache
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik-HSR.exe
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik-HSR.pdb
+D:\инженерка\мапа\Spravochik-HSR\obj\Debug\Spravochik_HSR.SelectForm.resources

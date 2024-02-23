@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tiplabel = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.Selbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PytepictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TippictureBox)).BeginInit();
@@ -66,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(500, 135);
+            this.label1.Location = new System.Drawing.Point(504, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 2;
@@ -82,7 +83,7 @@
             // 
             // PytepictureBox
             // 
-            this.PytepictureBox.Location = new System.Drawing.Point(837, 106);
+            this.PytepictureBox.Location = new System.Drawing.Point(757, 104);
             this.PytepictureBox.Name = "PytepictureBox";
             this.PytepictureBox.Size = new System.Drawing.Size(45, 45);
             this.PytepictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +92,7 @@
             // 
             // TippictureBox
             // 
-            this.TippictureBox.Location = new System.Drawing.Point(837, 55);
+            this.TippictureBox.Location = new System.Drawing.Point(757, 53);
             this.TippictureBox.Name = "TippictureBox";
             this.TippictureBox.Size = new System.Drawing.Size(45, 45);
             this.TippictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +103,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(607, 29);
+            this.label2.Location = new System.Drawing.Point(520, 29);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 24);
             this.label2.TabIndex = 6;
@@ -111,7 +112,7 @@
             // rolelabel
             // 
             this.rolelabel.AutoSize = true;
-            this.rolelabel.Location = new System.Drawing.Point(755, 33);
+            this.rolelabel.Location = new System.Drawing.Point(677, 33);
             this.rolelabel.Name = "rolelabel";
             this.rolelabel.Size = new System.Drawing.Size(51, 20);
             this.rolelabel.TabIndex = 7;
@@ -120,7 +121,7 @@
             // pytelabel
             // 
             this.pytelabel.AutoSize = true;
-            this.pytelabel.Location = new System.Drawing.Point(668, 108);
+            this.pytelabel.Location = new System.Drawing.Point(590, 107);
             this.pytelabel.Name = "pytelabel";
             this.pytelabel.Size = new System.Drawing.Size(51, 20);
             this.pytelabel.TabIndex = 9;
@@ -130,7 +131,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(607, 104);
+            this.label4.Location = new System.Drawing.Point(520, 104);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 24);
             this.label4.TabIndex = 8;
@@ -139,7 +140,7 @@
             // tiplabel
             // 
             this.tiplabel.AutoSize = true;
-            this.tiplabel.Location = new System.Drawing.Point(716, 69);
+            this.tiplabel.Location = new System.Drawing.Point(638, 68);
             this.tiplabel.Name = "tiplabel";
             this.tiplabel.Size = new System.Drawing.Size(51, 20);
             this.tiplabel.TabIndex = 11;
@@ -149,18 +150,32 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(607, 65);
+            this.label5.Location = new System.Drawing.Point(520, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(112, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "Тип урона -";
+            // 
+            // Selbutton
+            // 
+            this.Selbutton.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.Selbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Selbutton.Location = new System.Drawing.Point(821, 14);
+            this.Selbutton.Name = "Selbutton";
+            this.Selbutton.Size = new System.Drawing.Size(123, 49);
+            this.Selbutton.TabIndex = 12;
+            this.Selbutton.Text = " В Избраное";
+            this.Selbutton.UseVisualStyleBackColor = false;
+            this.Selbutton.Click += new System.EventHandler(this.Selbutton_Click);
             // 
             // InfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(960, 692);
+            this.Controls.Add(this.Selbutton);
             this.Controls.Add(this.tiplabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pytelabel);
@@ -199,5 +214,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label tiplabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button Selbutton;
     }
 }
